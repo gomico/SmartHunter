@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 namespace SmartHunter.Game.Config
 {
@@ -268,7 +268,7 @@ namespace SmartHunter.Game.Config
                         new MonsterPartConfig("Part", "LOC_PART_LEG_RIGHT"),
                         new MonsterPartConfig("Part", "LOC_PART_TAIL")
                     },
-                    1388.2f, 1f,
+                    1943.2f, 1f,
                     new MonsterCrownConfig(CrownPreset.Standard)
                 )
             },
@@ -434,7 +434,7 @@ namespace SmartHunter.Game.Config
                         new MonsterPartConfig("Part", "LOC_PART_LEGS"),
                         new MonsterPartConfig("Part", "LOC_PART_TAIL")
                     },
-                    1569.14f, 1f,
+                    1743.49f, 1f,
                     new MonsterCrownConfig(CrownPreset.Standard)
                 )
             },
@@ -470,7 +470,7 @@ namespace SmartHunter.Game.Config
                         new MonsterPartConfig("Part", "LOC_PART_LEG_RIGHT"),
                         new MonsterPartConfig("Part", "LOC_PART_TAIL")
                     },
-                    1630.55f, 1f,
+                    2461.5f, 1f,
                     new MonsterCrownConfig(CrownPreset.Alternate)
                 )
             },
@@ -488,7 +488,7 @@ namespace SmartHunter.Game.Config
                         new MonsterPartConfig("Part", "LOC_PART_LEG_RIGHT"),
                         new MonsterPartConfig("Part", "LOC_PART_TAIL")
                     },
-                    1630.55f, 1f,
+                    2372.44f, 1f,
                     new MonsterCrownConfig(CrownPreset.Alternate)
                 )
             },
@@ -1051,7 +1051,6 @@ namespace SmartHunter.Game.Config
                 new MonsterConfig("LOC_MONSTER_BANBARO",
                     new MonsterPartConfig[]
                     {
-                        // TODO: horns? and other parts on https://mhw.poedb.tw/eng/monster/Banbaro
                         new MonsterPartConfig("Removable", "LOC_REMOVABLE_PART_TAIL", true),
                         new MonsterPartConfig("Part", "LOC_PART_HORNS"),
                         new MonsterPartConfig("Part", "LOC_PART_BODY"),
@@ -1110,6 +1109,9 @@ namespace SmartHunter.Game.Config
                 new MonsterConfig("LOC_MONSTER_SHARA_ISHVALDA",
                     new MonsterPartConfig[]
                     {
+                        new MonsterPartConfig("Removable", "LOC_REMOVABLE_PART_HEAD", true),
+                        new MonsterPartConfig("Removable", "LOC_REMOVABLE_PART_HEAD_HEAD", true),
+                        new MonsterPartConfig("Removable", "LOC_REMOVABLE_PART_HEAD_HEAD_HEAD", true),
                         new MonsterPartConfig("Part", "LOC_PART_NECK_LEFT_ROCK"),
                         new MonsterPartConfig("Part", "LOC_PART_NECK_RIGHT_ROCK"),
                         new MonsterPartConfig("Part", "LOC_PART_HEAD_ROCK"),
@@ -1206,10 +1208,10 @@ namespace SmartHunter.Game.Config
             new MonsterStatusEffectConfig("StatusEffect", "LOC_STATUS_EFFECT_EXHAUST"),
             new MonsterStatusEffectConfig("StatusEffect", "LOC_STATUS_EFFECT_STUN"),
             new MonsterStatusEffectConfig("StatusEffect", "LOC_STATUS_EFFECT_TRANQUILIZE"),
-            new MonsterStatusEffectConfig("StatusEffect", "LOC_STATUS_EFFECT_FLASH"),
-            new MonsterStatusEffectConfig("StatusEffect", "LOC_PART_10"),
+            new MonsterStatusEffectConfig("StatusEffect", "LOC_STATUS_EFFECT_FLASH"), // 9
+            new MonsterStatusEffectConfig("StatusEffect", "LOC_STATUS_EFFECT_FLASH"), // 10
             new MonsterStatusEffectConfig("StatusEffect", "LOC_STATUS_EFFECT_KNOW_DOWN"),
-            new MonsterStatusEffectConfig("StatusEffect", "LOC_PART_12"),
+            new MonsterStatusEffectConfig("StatusEffect", "LOC_STATUS_EFFECT_DUNG"),
             new MonsterStatusEffectConfig("StatusEffect", "LOC_PART_13"),
             new MonsterStatusEffectConfig("StatusEffect", "LOC_STATUS_EFFECT_SHOCK_TRAP"),
             new MonsterStatusEffectConfig("StatusEffect", "LOC_STATUS_EFFECT_PITFALL_TRAP"),
@@ -1218,8 +1220,8 @@ namespace SmartHunter.Game.Config
             new MonsterStatusEffectConfig("StatusEffect", "LOC_STATUS_EFFECT_ELDERSEAL"),
             new MonsterStatusEffectConfig("StatusEffect", "LOC_STATUS_EFFECT_SMOKING"),
             new MonsterStatusEffectConfig("StatusEffect", "LOC_PART_20"),
-            new MonsterStatusEffectConfig("StatusEffect", "LOC_PART_21"),
-            new MonsterStatusEffectConfig("StatusEffect", "LOC_PART_22"),
+            new MonsterStatusEffectConfig("StatusEffect", "LOC_STATUS_EFFECT_FELVYNE_KNOCK_DOWN_TRAP"),
+            new MonsterStatusEffectConfig("StatusEffect", "LOC_STATUS_EFFECT_CLAW_ATTACK", true),
             new MonsterStatusEffectConfig("StatusEffect", "LOC_STATUS_EFFECT_VIOLATED"),
             new MonsterStatusEffectConfig("StatusEffect", "LOC_PART_24"),
             new MonsterStatusEffectConfig("StatusEffect", "LOC_PART_25"),
@@ -1229,7 +1231,9 @@ namespace SmartHunter.Game.Config
             new MonsterStatusEffectConfig("StatusEffect", "LOC_PART_29"),
             new MonsterStatusEffectConfig("StatusEffect", "LOC_PART_30"),
             new MonsterStatusEffectConfig("StatusEffect", "LOC_PART_31"),
-            new MonsterStatusEffectConfig("StatusEffect", "LOC_PART_32")
+            new MonsterStatusEffectConfig("StatusEffect", "LOC_PART_32"),
+
+            new MonsterStatusEffectConfig("Rage", "LOC_STATUS_EFFECT_RAGE"),
         };
     }
 }
